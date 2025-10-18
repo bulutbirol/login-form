@@ -4,71 +4,85 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f4f7fb;
+  background: #121212;
   font-family: "Segoe UI", sans-serif;
+  color: #f1f1f1;
 }
 
 .login-container {
-  background: #fff;
+  background: #1e1e1e;
   padding: 40px 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 320px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  width: 340px;
   text-align: center;
 }
 
 .login-container h2 {
   margin-bottom: 20px;
-  color: #333;
+  color: #00aaff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 input[type="email"],
 input[type="password"] {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 6px;
+  background-color: #252525;
+  color: #f1f1f1;
   font-size: 14px;
   outline: none;
+  transition: border-color 0.2s ease;
 }
 
 input[type="email"]:focus,
 input[type="password"]:focus {
-  border-color: #007bff;
+  border-color: #00aaff;
 }
 
 .checkbox {
   font-size: 14px;
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ddd;
+}
+
+.checkbox input {
+  accent-color: #00aaff;
 }
 
 button {
   padding: 10px;
-  background-color: #007bff;
+  background-color: #00aaff;
   color: white;
   border: none;
   border-radius: 6px;
   font-size: 15px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 button:hover:not(:disabled) {
-  background-color: #0056b3;
+  background-color: #0095dd;
 }
 
 button:disabled {
-  background-color: #b0b0b0;
+  background-color: #555;
   cursor: not-allowed;
 }
 
 .error {
-  color: #e63946;
+  color: #ff4d4d;
   font-size: 13px;
   margin: 0;
 }
