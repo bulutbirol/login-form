@@ -58,7 +58,7 @@ const Login = () => {
         </label>
         {errors.agree && <p className="error">{errors.agree}</p>}
 
-        <button type="submit" disabled={!isFormValid}>
+        <button type="submit">
           Giriş Yap
         </button>
       </form>
